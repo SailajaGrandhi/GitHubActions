@@ -10,8 +10,6 @@ build:
 runs-on: ubuntu-latest
 
 steps:
-- name: Checkout code
-uses: actions/checkout@v2
+- name: my-job
+  run: "Helloooo world"
 
-- name: Print Hello World
-run: echo "Hello World!"
