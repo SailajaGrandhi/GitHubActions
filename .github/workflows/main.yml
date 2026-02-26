@@ -1,15 +1,12 @@
 name: Hello World
 
-on:
-push:
-branches:
-- main
+on: push
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  my-job:
+    runs-on: ubuntu-latest
 
-steps:
-- name: my-job
-  run: "Helloooo world"
+    steps:
+      - name: my-job
+        run: "Helloooo world"
 
